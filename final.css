@@ -1,0 +1,255 @@
+body {
+    background: #fbdcdc;
+    height: 100%;
+    margin: 0;
+    background-image: url(birthday-background.jpg);
+    background-size: cover;
+}
+
+.birthday-card {
+    position: relative;
+    width: 300px;
+    height: 425px;
+    border: 10px solid #ef5050;
+    margin: 130px auto 0 auto;
+    -webkit-box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.241), rgba(255, 255, 255, 0.5)), url("friend2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 8px 20px 200px 80px rgb(0, 247, 235);
+    box-shadow: 8px 20px 200px 80px rgba(50, 248, 255, 0.773);
+    
+}
+
+p {
+    font-weight: 400;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(199, 10, 196),
+        0 0 30px rgb(199, 10, 196),
+        0 0 40px rgb(199, 10, 196),
+        0 0 55px rgb(199, 10, 196),
+        0 0 70px rgb(199, 10, 196);
+}
+
+.birthday-card .text {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    font-family: 'Nobile', sans-serif;
+}
+
+.birthday-card .text>p {
+    font-size: 1.1em;
+    color: white;
+    list-style: 1.4;
+    font-style: italic;
+    text-align: center;
+    margin: 30px auto 0 auto;
+}
+
+.birthday-card .text .title {
+    font-size: 1.5em;
+    margin: 120px auto 5px auto;
+    font-weight: 800;
+    text-shadow: 0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 20px rgb(247, 99, 244),
+        0 0 30px rgb(247, 99, 244),
+        0 0 40px rgb(247, 99, 244),
+        0 0 55px rgb(247, 99, 244),
+        0 0 70px rgb(247, 99, 244);
+}
+
+.birthday-card .cover-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: -10px 0 0 -10px;
+    border: 10px solid #d71515;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+}
+
+.birthday-card .cover-outer img {
+    -webkit-box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+    border-radius: 5px;
+}
+
+.birthday-card .cover-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 10px solid #d71515;
+    background-color: #d71515;
+    margin: -10px 0px 0 -10px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    -webkit-transform: perspective(800px) rotateY(0deg);
+    transform: perspective(800px) rotateY(0deg);
+    -webkit-transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
+    overflow: hidden;
+}
+
+.birthday-card .cover-inner img {
+    -webkit-transform: rotateY(170deg);
+    transform: rotateY(170deg);
+}
+
+.birthday-card:hover .cover-outer {
+    -webkit-transform: perspective(800px) rotateY(-170deg);
+    transform: perspective(800px) rotateY(-170deg);
+}
+
+.birthday-card:hover .cover-inner {
+    -webkit-transform: perspective(800px) rotateY(-170deg);
+    transform: perspective(800px) rotateY(-170deg);
+    -webkit-box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 360px) {
+    body {
+        background: #fbdcdc;
+        height: 100%;
+        margin: 0;
+        background-image: url(birthday-background.jpg);
+        background-size: 860px;
+    }
+    .birthday-card {
+        position: relative;
+        width: 200px;
+        height: 285px;
+        border: 10px solid #ef5050;
+        margin: 210px 56px 0 56px;
+        -webkit-box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 10px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.241), rgba(255, 255, 255, 0.5)), url("friend2.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 8px 8px 80px 5px rgb(0, 242, 255);
+        box-shadow: 8px 8px 50px 5px rgba(45, 220, 255, 0.773);
+        
+    }
+    
+    p {
+        font-weight: 200;
+        text-shadow: 0 0 3px #fff,
+            0 0 10px #fff,
+            0 0 20px rgb(199, 10, 196),
+            0 0 30px rgb(199, 10, 196),
+            0 0 40px rgb(199, 10, 196),
+            0 0 55px rgb(199, 10, 196),
+            0 0 70px rgb(199, 10, 196);
+    }
+    
+    .birthday-card .text {
+        width: 80%;
+        height: 80%;
+        margin: auto;
+        font-family: 'Nobile', sans-serif;
+    }
+    
+    .birthday-card .text>p {
+        font-size: 1.0em;
+        color: white;
+        list-style: 1.4;
+        font-style: italic;
+        text-align: center;
+        margin: 30px auto 0 auto;
+    }
+    
+    .birthday-card .text .title {
+        font-size: 1.1em;
+        margin: 30px auto 1px auto;
+        font-weight: 200;
+        text-shadow: 0 0 2px #fff,
+            0 0 10px #fff,
+            0 0 20px rgb(247, 99, 244),
+            0 0 30px rgb(247, 99, 244),
+            0 0 40px rgb(247, 99, 244),
+            0 0 55px rgb(247, 99, 244),
+            0 0 70px rgb(247, 99, 244);
+    }
+    
+    .birthday-card .cover-outer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        margin: -10px 0 0 -10px;
+        border: 10px solid #d71515;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-transform: perspective(800px) rotateY(0deg);
+        transform: perspective(800px) rotateY(0deg);
+        -webkit-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
+    }
+    
+    .birthday-card .cover-outer img {
+        -webkit-box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+        box-shadow: 0px 6px 11px 7px rgba(0, 0, 0, 0.22);
+        border-radius: 5px;
+    }
+    
+    .birthday-card .cover-inner {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 10px solid #ef5050;
+        background-color: #ef5050;
+        margin: -10px 0px 0 -10px;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
+        -webkit-filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.5));
+        -webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-transform-origin: 0% 50%;
+        transform-origin: 0% 50%;
+        -webkit-transform: perspective(800px) rotateY(0deg);
+        transform: perspective(800px) rotateY(0deg);
+        -webkit-transition: all 0.8s ease-in-out;
+        transition: all 0.8s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .birthday-card .cover-inner img {
+        -webkit-transform: rotateY(170deg);
+        transform: rotateY(170deg);
+    }
+    
+    .birthday-card:hover .cover-outer {
+        -webkit-transform: perspective(800px) rotateY(-170deg);
+        transform: perspective(800px) rotateY(-170deg);
+    }
+    
+    .birthday-card:hover .cover-inner {
+        -webkit-transform: perspective(800px) rotateY(-170deg);
+        transform: perspective(800px) rotateY(-170deg);
+        -webkit-box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 7px 0 5px 0 rgba(0, 0, 0, 0.3), inset 2px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
